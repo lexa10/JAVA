@@ -1,17 +1,20 @@
- class Stack {
 
-    private int mSize;
+class Stack {
+
+     private int mSize;
      private int[] stackArray;
      private int top;
 
      public Stack(int m) {
          this.mSize = m;
-         stackArray = new int[mSize];
-         top = -1;
+         this.stackArray = new int[this.mSize];
+         this.top = -1;
      }
+
      public void addElement(int element) {
          stackArray[++top] = element;
      }
+
      public int deleteElement() {
          return stackArray[top--];
      }
@@ -20,7 +23,11 @@
          return (top == -1);
      }
 
- }
 
+    public void push(char charAt) {
+    }
 
-
+    public boolean pop() {
+         return true;
+    }
+}
